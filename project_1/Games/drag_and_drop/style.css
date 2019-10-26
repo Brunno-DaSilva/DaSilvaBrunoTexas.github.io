@@ -1,0 +1,333 @@
+/*
+    Bruno DaSilva
+    First Project 
+    Drag and Drop Game
+    style.css File
+*/
+
+/*Main Font Theme*/
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Amatic SC", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  cursor: url(../drag_and_drop/images/mario_cursor.png), auto !important;
+}
+
+#content {
+  width: 100vw;
+  height: 80vh;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+/*******************************
+*     Start Game Msg
+*******************************/
+
+.startGame {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(rgba(38, 36, 36, 0.831), rgb(40, 38, 38));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+.title h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  color: gold;
+}
+
+.title-container {
+  width: 50vw;
+  height: 60vh;
+  background-image: url(../drag_and_drop/images/animals_play.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.startGame button {
+  font-family: "Amatic SC", cursive !important;
+  background-color: transparent;
+  color: #ffffff !important;
+  letter-spacing: 5px;
+  width: 80vw;
+  height: 80vh;
+  font-size: 4rem;
+  border: none;
+  transition: all 2s ease;
+  cursor: url(../drag_and_drop/images/mario_cursor.png), auto !important;
+}
+
+/****************************
+*       MSG Winner 
+*****************************/
+
+.DisplayWinnerMSG {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(rgba(38, 36, 36, 0.831), rgb(40, 38, 38));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.game-winner {
+  width: 50vw;
+  height: 60vh;
+  margin-top: 15vh;
+  background-image: url(../drag_and_drop/images/animals_won.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DisplayWinnerMSG button {
+  font-family: "Amatic SC", cursive !important;
+  background-color: transparent;
+  color: #ffffff !important;
+  letter-spacing: 5px;
+  width: 80vw;
+  height: 80vh;
+  font-size: 4rem;
+  border: none;
+  transition: all 3s ease;
+  cursor: url(../drag_and_drop/images/mario_cursor.png), auto !important;
+}
+
+/****************************
+* END - MSG Winner Ends Here 
+*****************************/
+/*
+/*
+/****************************
+*         MSG Game Over
+*****************************/
+
+.DisplayGameOverMsg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(rgba(38, 36, 36, 0.831), rgb(40, 38, 38));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.game-overBack {
+  width: 50vw;
+  height: 60vh;
+  margin-top: 15vh;
+  margin-left: 25vw;
+  background-image: url(../drag_and_drop/images/animals_try.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  z-index: 2;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.game-overBack button {
+  font-family: "Amatic SC", cursive !important;
+  background-color: transparent;
+  color: #ffffff !important;
+  letter-spacing: 5px;
+  width: 50vw !important;
+  height: 50vh;
+  font-size: 4rem;
+  border: none;
+  transition: all 3s ease;
+  cursor: url(../drag_and_drop/images/mario_cursor.png), auto !important;
+}
+
+/* .game-overBack button:hover {
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+} */
+
+/*******************************
+*     Drag and Drop Area
+*******************************/
+
+#dragItem {
+  width: 45vw;
+  height: 80vh;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#dragItem i {
+  margin: 10px;
+  padding: 10px;
+  width: 15vw;
+  height: 12vh;
+}
+
+#dropItem {
+  width: 45vw;
+  height: 80vh;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#dropItem div {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  width: 15vw;
+  height: 12vh;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  color: #7d7144;
+}
+
+#dropItem div:first-child,
+#dragItem div:first-child {
+  margin-left: 0;
+}
+
+#dropItem div.hovered {
+  background: #ffd64f89;
+}
+
+#dropItem div {
+  padding-top: 40px;
+  border: 2px dashed rgba(102, 102, 102, 0.701);
+  border-radius: 2px;
+}
+
+#dragItem div {
+  background: #666;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0 0 3px #000;
+}
+
+#dragItem div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+/*Clock CountDown*/
+
+.title h1 {
+  margin-right: 1vw;
+  font-size: 4rem;
+}
+#clockCountDown p {
+  font-family: "Amatic SC", cursive;
+  margin-top: 0.5vh;
+  color: #635931;
+  font-size: 4rem;
+  align-self: flex-end;
+}
+
+/* Individually coloured cards */
+
+#frog.correct {
+  background: #299f3b;
+}
+#cat.correct {
+  background: #14aca2;
+}
+#hippo.correct {
+  background: #d55092;
+}
+#fish.correct {
+  background: #5baadf;
+}
+#crow.correct {
+  background: #333333;
+}
+#horse.correct {
+  background: #8548ba;
+}
+
+#dog.correct {
+  background: #ffd54f;
+}
+#spider.correct {
+  background: #b11313;
+}
+#dragon.correct {
+  background: #125e86;
+}
+#dove.correct {
+  background: #d8832d;
+}
+
+/*******************************
+*     Footer and SVG
+*******************************/
+
+svg {
+  margin-bottom: -35px;
+}
+footer {
+  font-family: "Amatic SC", cursive !important;
+  width: 100%;
+  height: 10vh;
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: #1070a4;
+}

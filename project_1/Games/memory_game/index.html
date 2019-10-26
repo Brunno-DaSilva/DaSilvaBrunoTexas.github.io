@@ -1,0 +1,92 @@
+<!--
+    Bruno DaSilva
+    First Project 
+    Drag and Drop Game
+    HTML File
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drag & Drop Animals</title>
+    <link rel="shortcut icon" href="../drag_and_drop/images/mario_cursor.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="../memory_game/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <!--FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <!--     jQuery must come first -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!--Game Over MSG-->
+    <div id="gameOverMessage" class="DisplayGameOverMsg">
+      <div class="game-overBack">
+        <div class="title"></div>
+        <button onclick="resetGame()"></button>
+      </div>
+    </div>
+    <!--Start Game MSG-->
+    <div id="startGameHide" class="startGame">
+      <div id="gameStartMSG" class="title-container">
+        <div class="title"></div>
+        <button onclick="startGame()"></button>
+      </div>
+    </div>
+
+    <!--Winner MSG-->
+    <div id="successMessage" class="DisplayWinnerMSG">
+      <div class="game-winner">
+        <div class="title"></div>
+        <button onclick="resetGame()"></button>
+      </div>
+    </div>
+
+    <div class="title">
+      <div>
+        <h1>
+          <span style="color: #14aca2; " class="one">Memory</span>
+          <span style="color: #0e6ab0;  letter-spacing: 7px;">Game</span>
+          <span style="color: #f94c4c;  letter-spacing: 7px;">Fruits</span>
+        </h1>
+      </div>
+      <div id="clockCountDown"></div>
+    </div>
+    <!--Container Game Board-->
+    <div id="content">
+      <div id="game-board"></div>
+    </div>
+    <br />
+    <!--Container Ends Here-->
+
+    <!--Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

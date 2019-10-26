@@ -1,0 +1,40 @@
+/*
+
+Title:     Memory Game BY General Assembly
+Author:    Bruno DaSilva
+File Type: CSS  
+Date: 	   August 25, 2019
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Amatic SC", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  cursor: url(../drag_and_drop/images/mario_cursor.png), auto !important;
+}
+
+header {
+  background-color: #f15b31;
+  color: #ffffff;
+  padding: 30px 20px 30px 20px;
+}
+
+img {
+  width: 20vw;
+  height: 30vh;
+  margin: 40px 8px 0 8px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

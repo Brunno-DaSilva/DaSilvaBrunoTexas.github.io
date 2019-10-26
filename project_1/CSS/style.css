@@ -1,0 +1,364 @@
+/*
+    Bruno DaSilva
+    First Project 
+    Drag and Drop Game
+    style.css File
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Bangers|Bungee+Inline|Faster+One|Luckiest+Guy|Secular+One|Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  cursor: url(../Games/drag_and_drop/images/mario_cursor.png), auto !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*******************************
+*     Land Page Style
+*******************************/
+#landPage {
+  position: relative;
+  height: 100vh;
+  max-height: 110vh;
+  background-image: url("../img/LandingPage/LITTLE-GIRL.png");
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 96%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+  padding: 0 20px;
+}
+
+.title {
+  z-index: 2 !important;
+  text-align: center;
+}
+.firstWord,
+.secondWord,
+.thirdWord {
+  letter-spacing: 40px;
+}
+.title {
+  font-family: "Amatic SC", cursive;
+  width: 100vw;
+  z-index: 2 !important;
+  color: #1070a4;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.255); */
+}
+#landPage .img-1 {
+  position: absolute;
+  width: 15vw;
+  top: 68vh;
+  left: 8vw;
+  z-index: 3;
+}
+#landPage .img-2 {
+  position: absolute;
+  width: 8vw;
+  top: 45vh;
+  left: 15vw;
+  z-index: 3;
+}
+#landPage .img-3 {
+  position: absolute;
+  width: 10vw;
+  top: -0.1vh;
+  left: -1vw;
+  z-index: 6;
+}
+
+#landPage .img-4 {
+  position: absolute;
+  width: 15vw;
+  top: 5vh;
+  left: 17vw;
+  z-index: 2;
+}
+#landPage .hiden-circle {
+  position: absolute;
+  width: 3vw;
+  height: 1vw;
+  top: 33vh;
+  left: 60vw;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 60px 50px #fff, 0 0 100px 60px #fff, 0 0 140px 90px #ffd900;
+  transition: box-shadow 4s ease-out;
+  animation: scale 4s linear infinite;
+}
+#landPage .img-5 {
+  position: absolute;
+  width: 10vw;
+  top: 25vh;
+  left: 57vw;
+  z-index: 2;
+  transform: rotate(10deg);
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+#landPage .img-6 {
+  position: absolute;
+  width: 5vw;
+  top: 48vh;
+  left: 70vw;
+  z-index: -1;
+}
+
+#landPage .img-7 {
+  position: absolute;
+  width: 12vw;
+  top: 20vh;
+  left: 90vw;
+  z-index: 3;
+}
+#landPage .img-8 {
+  position: absolute;
+  width: 18vw;
+  top: 60vh;
+  left: 75vw;
+  z-index: 1;
+}
+
+#landPage .img-9 {
+  position: absolute;
+  width: 10vw;
+  top: -20vh;
+  left: 20vw;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+#landPage .img-10 {
+  position: absolute;
+  width: 10vw;
+  top: 50vh;
+  left: -13vw;
+  z-index: -3;
+  transform: rotate(90deg);
+}
+
+/*******************************
+*        Game Area
+*******************************/
+
+.container {
+  height: 110vh;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  z-index: 15;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #1070a4;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  z-index: 15;
+}
+
+.tablink:hover {
+  background-color: #89b8d1;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100vh;
+  z-index: 15;
+}
+
+#Home {
+  background-color: #1070a4;
+}
+#News {
+  background-color: #95d2ba;
+}
+#Contact {
+  background-color: #fdd982;
+}
+#About {
+  background-color: #ff634d;
+}
+/*******************************
+*     iFrames
+*******************************/
+
+iframe {
+  height: 90vh;
+  width: 90vw;
+  overflow: hidden;
+}
+
+/*******************************
+*         Contact
+*******************************/
+.contact-container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: -;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr !important;
+}
+
+#contactme .titleContactMe {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 60px !important;
+  transform: rotate(2deg) !important;
+  margin-top: 0px;
+}
+
+#contactme {
+  padding: 0;
+  background-color: #95d2ba;
+}
+
+.titleContactMe {
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 80px;
+  transform: rotate(2deg);
+  color: #f8f6f6db;
+  margin-bottom: 60px;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 #485e74b3;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  background: #225470;
+}
+.wrapper > * {
+  padding: 1.5em;
+}
+.greet h3,
+.greet p {
+  color: white;
+}
+.greet h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
+}
+
+.greet h3 span {
+  color: antiquewhite;
+  font-size: 2.5rem;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+}
+
+.contact {
+  background: #fafbfc;
+  border-radius: 25px;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.contact form input,
+.contact form textarea {
+  width: 50%;
+  padding: 1em;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #4f5050af;
+  color: #4f5050af;
+}
+
+#btn-form input {
+  border: none;
+  width: 150px;
+  background: rgb(34, 198, 204);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.error i {
+  color: rgba(255, 0, 0, 0.699);
+  font-size: 6px;
+}
+
+svg {
+  background-size: cover;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+/*******************************
+*     Footer and SVG
+*******************************/
+svg {
+  margin-bottom: -35px;
+  z-index: 5;
+}
+footer {
+  height: 15vh;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: #1070a4;
+  z-index: 6;
+}

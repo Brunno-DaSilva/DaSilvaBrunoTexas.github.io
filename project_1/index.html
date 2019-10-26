@@ -1,0 +1,153 @@
+<!--
+    Bruno DaSilva
+    First Project 
+    Drag and Drop Game
+    Index.html File
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Learn & Play</title>
+  <link rel="shortcut icon" href="../project_1/Games/drag_and_drop/images/mario_cursor.png" />
+
+  <!--CSS stylesheet -->
+  <link rel="stylesheet" href="../project_1/CSS/style.css" />
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet" />
+  <!--FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+  <!--     jQuery must come first -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+</head>
+
+<body>
+  <header id="landPage">
+    <div class="img-container">
+      <img class="img-1" src="../project_1/img/LandingPage/obj-1-cropped.png" alt="">
+      <img class="img-2" src="../project_1/img/LandingPage/obj-2-cropped.png" alt="">
+      <img class="img-3" src="../project_1/img/LandingPage/obj-3-cropped.png" alt="">
+      <div class="hiden-circle"></div>
+      <img class="img-4" src="../project_1/img/LandingPage/obj-4-cropped.png" alt="">
+      <img class="img-5" src="../project_1/img/LandingPage/obj-5-cropped.png" alt="">
+      <img class="img-6" src="../project_1/img/LandingPage/obj-6-cropped.png" alt="">
+      <img class="img-7" src="../project_1/img/LandingPage/obj-7-cropped.png" alt="">  
+      <img class="img-8" src="../project_1/img/LandingPage/obj-8-cropped.png" alt="">
+          <!-- <img class="img-9" src="../project_1/img/LandingPage/obj-2-cropped.png" alt="">
+          <img class="img-10" src="../project_1/img/LandingPage/obj-2-cropped.png" alt=""> -->
+    </div>
+    <div class="title">
+      <div>
+        <h2 class="scrolling firstWord" id="One" data-rate="2">Learn</h2>
+        <h2 class="scrolling secondWord" id="Five">& </h2>
+        <h2 class="scrolling thirdWord" id="Six">Play</h2>
+        <div>
+
+  </header>
+
+  <section id="gameBoard">
+    <div class="container">
+      <!--Tab Menu, to hold the games-->
+      <button class="tablink" onclick="openPage('Home', this, '#1070a4')" id="defaultOpen">Home</button>
+      <button class="tablink" onclick="openPage('News', this, '#95d2ba')">Animals</button>
+      <button class="tablink" onclick="openPage('Contact', this, '#fdd982')">Coding Icons</button>
+      <button class="tablink" onclick="openPage('About', this, '#ff634d')">About</button>
+
+      <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Here you can play games</p>        
+      </div>
+
+      <div id="News" class="tabcontent">
+        <iframe src='../project_1/Games/drag_and_drop/index.html' frameBorder="0"></iframe>
+      </div>
+
+      <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <iframe src='../project_1/Games/drag_and_drop_Coding/index.html' frameBorder="0"></iframe>
+      </div>
+
+      <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+      </div>
+
+    </div>
+
+  </section>
+  <br>
+  <section id="contactme">
+    <div class="contact-container">
+      <h2 class="titleContactMe animate-box">Contact Me</h2>
+
+      <div class="wrapper animated bounceInLeft">
+        <div class="greet">
+          <h3><span>Bruno DaSilva</span> Web Developer</h3>
+
+          <p id="hide-text-small-screen"style="color:#FFCC5C;">
+            I am excited to hear from you <i class="fas fa-mug-hot"></i>
+          </p>
+        </div>
+
+        <div class="contact">
+          
+          <form method="" action="">
+            <p>
+              
+              <input name="name" type="text" placeholder="Your Full Name" />
+              <span class="error"><i class="fas fa-circle"></i> </span>
+            </p>
+            <br />
+            <p>
+              <input
+                name="email"
+                type="text"
+                placeholder="Your E-mail Address"
+              />
+              <span class="error"><i class="fas fa-circle"></i> </span>
+            </p>
+            <br />
+            <p><input name="subject" type="text" placeholder="Subject" /></p>
+            <p>
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="4"
+              ></textarea>
+            </p>
+            <br />
+            <p id="btn-form"><input type="submit" name="submit" /></p>
+
+            <br />
+          </form>
+        
+        </div>
+      </div>
+    </div>
+    <svg viewBox="0 0 100 25">
+      
+      <path fill="#1070a4" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+    </svg>
+  </section>
+  <footer>
+    <p>&copy 2019 Bruno DaSilva<span> Learn and Play App</span></p>
+  </footer>
+  <!--Scripts -->
+  <script src="../project_1/js/app.js"></script>
+</body>
+
+</html>
