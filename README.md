@@ -1,20 +1,11 @@
 # DaSilvaBrunoTexas.github.io
-Learn &amp; Play is a fictitious web application that provides a safe and interactive environment to kids, where they can Learn while playing games.  
+Learn & Play is a fictitious web application that provides a safe and interactive environment to kids, where they can Learn while playing games.
 
+The technologies used: HTML and CSS JavaScript jQuery Bootstrap Google Fonts FontAwesome icons Adobe Illustrator Pixel bay images Freepik
 
-The technologies used:
-HTML and CSS
-JavaScript
-jQuery
-Bootstrap
-Google Fonts
-FontAwesome icons
-Adobe Illustrator
+The approach taken: The main idea. The main idea is to have a single platform where children at the age of 3-8 can learn while playing different games. I choose to do the drag and drop game. To accomplish a single platform environment, I had to develop the main play area and the games in different files linked by an iframe to the main page, displayed in a tab menu style.
 
-The approach taken: 
-The main idea. The main idea is to have a single platform where children at the age of 3-8 can learn while playing different games. I choose to do the drag and drop game. To accomplish a single platform environment, I had to develop the main play area and the games in different files linked by an iframe to the main page, displayed in a tab menu. 
-
-About the game development. To develop the game, I had built the drag and drop with jquery and incorporated the win/louse logic with javascript.  
+About the game development: To develop the game, I had built the drag and drop with jQuery UI and incorporated the win/louse logic with javascript. Additionally, I have added a time countdown tied to the louse function, if the time countdown reaches 0, the Game Over message will display, otherwise, other logics are implemented.
 
 The link to the GitHub pages: https://dasilvabrunotexas.github.io/
 
