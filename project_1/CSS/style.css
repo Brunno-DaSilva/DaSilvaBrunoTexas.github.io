@@ -66,8 +66,8 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.255); */
 }
+
 #landPage .img-1 {
   position: absolute;
   width: 15vw;
@@ -179,7 +179,7 @@ body {
 
 /* Style tab links */
 .tablink {
-  background-color: #1070a4;
+  background-color: #3da6df;
   color: white;
   float: left;
   border: none;
@@ -187,12 +187,12 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  width: 50%;
   z-index: 15;
 }
 
 .tablink:hover {
-  background-color: #89b8d1;
+  background-color: #3da6df;
 }
 
 .tabcontent {
@@ -203,18 +203,13 @@ body {
   z-index: 15;
 }
 
-#Home {
-  background-color: #1070a4;
-}
-#News {
+#Animals {
   background-color: #95d2ba;
 }
-#Contact {
-  background-color: #fdd982;
+#Coding {
+  background-color: #1070a4;
 }
-#About {
-  background-color: #ff634d;
-}
+
 /*******************************
 *     iFrames
 *******************************/
@@ -234,7 +229,6 @@ iframe {
   padding-right: 1rem;
   margin: auto;
   text-align: center;
-  margin-bottom: -;
 }
 
 .wrapper {
@@ -354,6 +348,7 @@ svg {
   z-index: 5;
 }
 footer {
+  font-family: "Shadows Into Light", cursive;
   height: 15vh;
   color: white;
   font-size: 1.5rem;
@@ -361,4 +356,8 @@ footer {
   margin-top: auto;
   background-color: #1070a4;
   z-index: 6;
+}
+
+footer span {
+  color: gold;
 }

@@ -4,11 +4,9 @@
     Drag and Drop Game
     Index.html File
 -->
+
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,29 +60,21 @@
   <section id="gameBoard">
     <div class="container">
       <!--Tab Menu, to hold the games-->
-      <button class="tablink" onclick="openPage('Home', this, '#1070a4')" id="defaultOpen">Home</button>
-      <button class="tablink" onclick="openPage('News', this, '#95d2ba')">Animals</button>
-      <button class="tablink" onclick="openPage('Contact', this, '#fdd982')">Coding Icons</button>
-      <button class="tablink" onclick="openPage('About', this, '#ff634d')">About</button>
+      
+      <button class="tablink" onclick="openPage('Animals', this, '#95d2ba')" id="defaultOpen">Animals</button>
+      <button class="tablink" onclick="openPage('Coding', this, '#1070a4')">Coding Icons</button>
 
-      <div id="Home" class="tabcontent">
-        <h3>Home</h3>
-        <p>Here you can play games</p>        
-      </div>
+  
 
-      <div id="News" class="tabcontent">
+      <div id="Animals" class="tabcontent">
         <iframe src='../project_1/Games/drag_and_drop/index.html' frameBorder="0"></iframe>
       </div>
 
-      <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
+      <div id="Coding" class="tabcontent">
         <iframe src='../project_1/Games/drag_and_drop_Coding/index.html' frameBorder="0"></iframe>
       </div>
 
-      <div id="About" class="tabcontent">
-        <h3>About</h3>
-        <p>Who we are and what we do.</p>
-      </div>
+      
 
     </div>
 
@@ -146,6 +136,7 @@
   <footer>
     <p>&copy 2019 Bruno DaSilva<span> Learn and Play App</span></p>
   </footer>
+  
   <!--Scripts -->
   <script src="../project_1/js/app.js"></script>
 </body>
