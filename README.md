@@ -1,4 +1,4 @@
-# DaSilvaBrunoTexas.github.io
+# Learn & Play
 Learn & Play is a fictitious web application that provides a safe and interactive environment to kids, where they can Learn while playing games.
 
 The technologies used: HTML and CSS JavaScript jQuery Bootstrap Google Fonts FontAwesome icons Adobe Illustrator Pixel bay images Freepik
