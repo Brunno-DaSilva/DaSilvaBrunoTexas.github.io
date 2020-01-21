@@ -7,5 +7,5 @@ The approach taken: The main idea. The main idea is to have a single platform wh
 
 About the game development: To develop the game, I had built the drag and drop with jQuery UI and incorporated the win/louse logic with javascript. Additionally, I have added a time countdown tied to the louse function, if the time countdown reaches 0, the Game Over message will display, otherwise, other logics are implemented.
 
-The link to the GitHub pages: https://dasilvabrunotexas.github.io/project_1/index.html
+Demo: https://dasilvabrunotexas.github.io/project_1/index.html
 
